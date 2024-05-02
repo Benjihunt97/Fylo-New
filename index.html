@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flyo</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="sticky top-0 left-0 w-full flex items-center p-7 font-[Raleway] bg-white">
+        <!-- logo -->
+        <button class="">
+            <svg width="166" height="49" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path id="a" d="M.014.03h93.96v48.29H.015z"/></defs><g fill="none" fill-rule="evenodd"><path d="M0 14.13v.123l27.95 13.13L56 14.209v-.033L27.95 1 0 14.13zm10.077.062L27.95 5.795l17.877 8.397-17.877 8.396-17.874-8.396zM27.95 32.483L0 19.55v4.784l27.95 12.964L56 24.289v-4.784L27.95 32.483zm0 9.703L0 29.25v4.783L27.95 47 56 33.99v-4.784l-28.05 12.98z" fill="#BDBAFA"/><g transform="translate(72)"><mask id="b" fill="#fff"><use xlink:href="#a"/></mask><path d="M87.56 24.152a8.1 8.1 0 0 0-2.161-5.573 7.259 7.259 0 0 0-2.34-1.673 6.864 6.864 0 0 0-2.85-.601c-1.01 0-1.961.2-2.852.601a7.257 7.257 0 0 0-2.34 1.673 8.102 8.102 0 0 0-2.16 5.574 8.102 8.102 0 0 0 2.16 5.573 7.257 7.257 0 0 0 2.34 1.672 6.864 6.864 0 0 0 2.851.602c1.01 0 1.96-.2 2.852-.602a7.259 7.259 0 0 0 2.339-1.672 8.1 8.1 0 0 0 2.16-5.574zm6.415 0c0 1.932-.357 3.723-1.07 5.373a13.098 13.098 0 0 1-2.94 4.28c-1.247 1.205-2.71 2.156-4.388 2.854-1.678.699-3.468 1.048-5.369 1.048-1.9 0-3.683-.349-5.346-1.048a13.863 13.863 0 0 1-4.366-2.876 13.351 13.351 0 0 1-2.94-4.302c-.713-1.65-1.07-3.426-1.07-5.329 0-1.873.364-3.634 1.092-5.284a13.92 13.92 0 0 1 2.962-4.325 13.671 13.671 0 0 1 4.367-2.898 13.552 13.552 0 0 1 5.301-1.048c1.901 0 3.69.35 5.369 1.048 1.678.698 3.14 1.65 4.388 2.854 1.248 1.204 2.228 2.638 2.94 4.302.713 1.665 1.07 3.449 1.07 5.351zM64.258 36.905a8.6 8.6 0 0 1-1.715.58c-.638.148-1.3.222-1.982.222a9.84 9.84 0 0 1-2.74-.379 6.003 6.003 0 0 1-2.295-1.226c-.653-.565-1.173-1.3-1.56-2.207-.385-.907-.578-2-.578-3.277V.029h6.549v29.474c0 1.07.215 1.806.646 2.207.43.401.943.602 1.537.602.742 0 1.455-.223 2.138-.669v5.262zM50.492 11.22L38.908 41.854c-.861 2.289-1.99 3.939-3.386 4.95-1.396 1.01-3.06 1.515-4.99 1.515-.297 0-.623-.022-.98-.066a7.352 7.352 0 0 1-1.025-.201l-2.138-5.975a8.486 8.486 0 0 0 1.56.557c.534.134 1.039.201 1.514.201 1.01 0 1.93-.23 2.762-.691.832-.46 1.47-1.315 1.916-2.564l.891-2.586-9.935-25.773h6.995l5.925 16.588 5.57-16.588h6.905zM23.538 7.342H6.786v8.294h16.529v5.618H6.785v15.784H.015V1.412h23.524v5.93z" fill="#000" mask="url(#b)"/></g></g></svg>
+        </button>
+
+        <ul id="menu" class="flex flex-col sm:flex-row sm:items-center gap-5 sm:ml-auto absolute -right-[100%] top-0 h-screen w-44 bg-white p-7 sm:p-0 border-l-2 border-l-slate-300 sm:border-l-0 sm:h-auto sm:w-auto sm:static transition-all">
+            <button id="close-menu" class="material-symbols-outlined w-fit sm:hidden">close</button>
+            <li><a href="">Featured</a></li>
+            <li><a href="">Teams</a></li>
+            <li><a href="">Sign In</a></li>
+        </ul>
+
+        <button id="open-menu" class="material-symbols-outlined ml-auto text-3xl sm:hidden">menu</button>
+    </nav>
+
+    <main>
+
+        <!-- hero -->
+        <div class="hero p-7 sm:p-20 sm:p-12 grid sm:grid-cols-2 gap-5 font-[Raleway] text-center sm:text-left">
+            <div id="hero-text" class="transition-all duration-500 -translate-x-[200%]">
+                <h1 class="font-bold text-3xl">All your files in one secure location, accessible anywhere.</h1>
+                <p class="text-sm my-5">Fylo stores your most important files in one secure location.
+                    Access them wherever you need, share and collaborate with friends,
+                    family, and co-workers.</p>
+                
+                <div class="flex items-center flex-col gap-2 sm:flex-row">
+                    <input type="eamil" placeholder="Enter your email" class="border border-slate-700 rounded-lg p-2 text-sm w-full sm:w-[250px]">
+                    <button class="bg-[#3065f8] text-white rounded-md px-4 py-2 text-sm w-full sm:w-fit">Get Started</button>
+                </div>
+            </div>
+            <img src="https://raw.githubusercontent.com/Benjihunt97/Fylo-New/a1497a09babcf7dc1ad48d025fbb1b91509a21dd/images/illustration-1.svg" alt="" class="row-start-1 sm:col-start-2 transition-all duration-500 translate-x-[200%]" id="hero-img">
+        </div>
+
+        <!-- stay productive -->
+        <div class="grid sm:grid-cols-[450px_auto] p-7 sm:p-20">
+            <div class="flex flex-col transition-all duration-500 -translate-x-[200%]" id="about-text">
+                <h1 class="font-bold text-3xl font-[Raleway] mb-2 mt-2 sm:mt-0">Stay productive, wherever you are</h1>
+                <p class="text-sm">Never let location be an issue when accessing your files. Fylo has you
+                covered for all of your file storage needs.
+                <br><br>
+                Securely share files and folders with friends, family and colleagues for
+                live collaboration. No email attachments required!
+                </p>
+
+                <p class="text-[#3c9f8f] text-sm my-4 underline">
+                    See how Fylo works
+                    
+                </p>
+
+                <div class="text-xs sm:mt-auto mt-12 w-[300px] mx-auto">
+                    <svg width="13" height="12" xmlns="http://www.w3.org/2000/svg"><text transform="translate(-34 -25)" fill="#07043B"
+                            fill-rule="evenodd" font-family="Helvetica" font-size="45">
+                            <tspan x="33" y="56">“</tspan>
+                        </text></svg>
+                    <p class="my-5">Fylo has improved our team productivity by an order of magnitude. Since
+                    making the switch our team has become a well-oiled collaboration machine.</p>
+
+                    <div class="flex items-center gap-2">
+                        <img src="https://github.com/Benjihunt97/Fylo-New/blob/main/images/avatar-testimonial.jpg?raw=true" alt="" class="size-12 rounded-full">
+                        <p class="flex flex-col">
+                            <span class="font-semibold">Kyle Burton</span>
+                            <span>Founder & CEO, Huddle</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img src="https://raw.githubusercontent.com/Benjihunt97/Fylo-New/a1497a09babcf7dc1ad48d025fbb1b91509a21dd/images/illustration-2.svg" alt="" class="row-start-1 sm:col-start-2 sm:ml-auto w-[450px] transition-all duration-500 translate-x-[200%]" id="about-img">
+        </div>
+
+        <!-- get started -->
+        <div class="grid sm:grid-cols-[450px_auto] gap-3 p-7 sm:p-20 bg-[#585989]">
+            <div>
+                <h1 class="text-white font-bold text-2xl mb-3">Get early access today</h1>
+                <p class="text-white text-sm">It only takes a minute to sign up and our free starter tier is extremely generous.
+                If you have any questions, our support team would be happy to help you.</p>
+            </div>
+            <div class="flex flex-col gap-2 sm:ml-auto">
+                <input type="eamil" placeholder="Enter your email" class="border border-slate-700 rounded-lg p-2 text-sm w-full sm:w-[450px]">
+                <button class="bg-[#3065f8] text-white rounded-md px-4 py-2 text-sm w-fit">Get Started</button>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="bg-[#070439] text-white p-7 sm:p-20 grid sm:grid-cols-4 gap-7 text-sm">
+            <div class="col-span-full mb-12">
+                <svg width="166" height="49" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs>
+                        <path id="a" d="M.014.03h93.96v48.29H.015z" />
+                    </defs>
+                    <g fill="none" fill-rule="evenodd">
+                        <path
+                            d="M0 14.13v.123l27.95 13.13L56 14.209v-.033L27.95 1 0 14.13zm10.077.062L27.95 5.795l17.877 8.397-17.877 8.396-17.874-8.396zM27.95 32.483L0 19.55v4.784l27.95 12.964L56 24.289v-4.784L27.95 32.483zm0 9.703L0 29.25v4.783L27.95 47 56 33.99v-4.784l-28.05 12.98z"
+                            fill="#fff" />
+                        <g transform="translate(72)">
+                            <mask id="b" fill="#fff">
+                                <use xlink:href="#a" />
+                            </mask>
+                            <path
+                                d="M87.56 24.152a8.1 8.1 0 0 0-2.161-5.573 7.259 7.259 0 0 0-2.34-1.673 6.864 6.864 0 0 0-2.85-.601c-1.01 0-1.961.2-2.852.601a7.257 7.257 0 0 0-2.34 1.673 8.102 8.102 0 0 0-2.16 5.574 8.102 8.102 0 0 0 2.16 5.573 7.257 7.257 0 0 0 2.34 1.672 6.864 6.864 0 0 0 2.851.602c1.01 0 1.96-.2 2.852-.602a7.259 7.259 0 0 0 2.339-1.672 8.1 8.1 0 0 0 2.16-5.574zm6.415 0c0 1.932-.357 3.723-1.07 5.373a13.098 13.098 0 0 1-2.94 4.28c-1.247 1.205-2.71 2.156-4.388 2.854-1.678.699-3.468 1.048-5.369 1.048-1.9 0-3.683-.349-5.346-1.048a13.863 13.863 0 0 1-4.366-2.876 13.351 13.351 0 0 1-2.94-4.302c-.713-1.65-1.07-3.426-1.07-5.329 0-1.873.364-3.634 1.092-5.284a13.92 13.92 0 0 1 2.962-4.325 13.671 13.671 0 0 1 4.367-2.898 13.552 13.552 0 0 1 5.301-1.048c1.901 0 3.69.35 5.369 1.048 1.678.698 3.14 1.65 4.388 2.854 1.248 1.204 2.228 2.638 2.94 4.302.713 1.665 1.07 3.449 1.07 5.351zM64.258 36.905a8.6 8.6 0 0 1-1.715.58c-.638.148-1.3.222-1.982.222a9.84 9.84 0 0 1-2.74-.379 6.003 6.003 0 0 1-2.295-1.226c-.653-.565-1.173-1.3-1.56-2.207-.385-.907-.578-2-.578-3.277V.029h6.549v29.474c0 1.07.215 1.806.646 2.207.43.401.943.602 1.537.602.742 0 1.455-.223 2.138-.669v5.262zM50.492 11.22L38.908 41.854c-.861 2.289-1.99 3.939-3.386 4.95-1.396 1.01-3.06 1.515-4.99 1.515-.297 0-.623-.022-.98-.066a7.352 7.352 0 0 1-1.025-.201l-2.138-5.975a8.486 8.486 0 0 0 1.56.557c.534.134 1.039.201 1.514.201 1.01 0 1.93-.23 2.762-.691.832-.46 1.47-1.315 1.916-2.564l.891-2.586-9.935-25.773h6.995l5.925 16.588 5.57-16.588h6.905zM23.538 7.342H6.786v8.294h16.529v5.618H6.785v15.784H.015V1.412h23.524v5.93z"
+                                fill="#fff" mask="url(#b)" />
+                        </g>
+                    </g>
+                </svg>
+            </div>
+
+            <ul>
+                <li>Phone: +1-543-123-4567</li>
+                <li>example@fylo.com</li>
+            </ul>
+            <ul>
+                <li>About Us</li>
+                <li>Jobs</li>
+                <li>Press</li>
+                <li>Blog</li>
+                <li></li>
+            </ul>
+            <ul>
+                <li>Contact Us</li>
+                <li>Terms</li>
+                <li>Privacy</li>
+            </ul>
+            <ul class="flex gap-2 mx-auto sm:mx-0">
+                <li class="size-8 grid place-items-center rounded-full border border-white">
+                    <svg width="24" height="24"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+                </li>
+                <li class="size-8 grid place-items-center rounded-full border border-white">
+                    <svg width="24" height="24"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path
+                            d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z" />
+                    </svg>
+                </li>
+                <li class="size-8 grid place-items-center rounded-full border border-white">
+                    <svg  width="24" height="24"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M16.5 7.5l0 .01" />
+                    </svg>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
